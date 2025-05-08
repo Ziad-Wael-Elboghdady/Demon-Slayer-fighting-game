@@ -35,3 +35,9 @@ function decreaseTimer() {
     determinWinner({ player: player1, enmy: enmy, timerId });
   }
 }
+window.addEventListener('click',() => {
+  const bgMusic = document.getElementById('bg-music');
+  if (bgMusic.paused) {
+    bgMusic.play();
+  }
+});
